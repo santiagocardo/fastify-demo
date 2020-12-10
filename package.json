@@ -1,0 +1,30 @@
+{
+  "name": "fastify-complete-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap test/**/*.test.js",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w --ignore-watch='./data' -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "db-migrate": "^0.11.11",
+    "db-migrate-pg": "^1.2.2",
+    "fastify": "^3.0.0",
+    "fastify-autoload": "^3.0.2",
+    "fastify-cli": "^2.5.1",
+    "fastify-plugin": "^3.0.0",
+    "fastify-swagger": "^3.5.0",
+    "pg-promise": "^10.8.1"
+  },
+  "devDependencies": {
+    "tap": "^14.0.0"
+  }
+}
